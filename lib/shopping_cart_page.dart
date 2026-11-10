@@ -565,12 +565,14 @@ class ShoppingCartPage extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          label,
-          style: TextStyle(
-            fontSize: isTotal ? 17.0 : 14.0,
-            fontWeight: isTotal ? FontWeight.w800 : FontWeight.w500,
-            color: isTotal ? const Color(0xFF0F172A) : const Color(0xFF475569),
+        Expanded(
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: isTotal ? 17.0 : 14.0,
+              fontWeight: isTotal ? FontWeight.w800 : FontWeight.w500,
+              color: isTotal ? const Color(0xFF0F172A) : const Color(0xFF475569),
+            ),
           ),
         ),
         Text(
