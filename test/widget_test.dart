@@ -25,7 +25,7 @@ void main() {
 
     // 3. Delivery Card
     expect(find.text('Deliver to Niño Angelo C. Cirunay'), findsOneWidget);
-    expect(find.text('Matina, Davao City'), findsOneWidget);
+    expect(find.textContaining('Matina'), findsOneWidget);
     expect(find.text('Change'), findsOneWidget);
 
     // 4. Order Items Section

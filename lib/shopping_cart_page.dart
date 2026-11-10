@@ -44,11 +44,7 @@ class CartItemCard extends StatelessWidget {
               color: const Color(0xFFDBEAFE),
               borderRadius: BorderRadius.circular(14.0),
             ),
-            child: Icon(
-              icon,
-              size: 34.0,
-              color: const Color(0xFF1E64EB),
-            ),
+            child: Icon(icon, size: 34.0, color: const Color(0xFF1E64EB)),
           ),
           const SizedBox(width: 14.0),
           // Product Details
@@ -184,10 +180,7 @@ class ShoppingCartPage extends StatelessWidget {
         elevation: 0,
         surfaceTintColor: Colors.transparent,
         leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_back,
-            color: Color(0xFF0F172A),
-          ),
+          icon: const Icon(Icons.arrow_back, color: Color(0xFF0F172A)),
           onPressed: () {
             debugPrint('Back clicked');
           },
@@ -255,7 +248,10 @@ class ShoppingCartPage extends StatelessWidget {
           children: [
             // 2. Introduction Section
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10.0,
+                vertical: 4.0,
+              ),
               decoration: BoxDecoration(
                 color: const Color(0xFFDBEAFE),
                 borderRadius: BorderRadius.circular(6.0),
@@ -283,10 +279,7 @@ class ShoppingCartPage extends StatelessWidget {
             const SizedBox(height: 4.0),
             const Text(
               'Review your items before placing your order.',
-              style: TextStyle(
-                fontSize: 14.0,
-                color: Color(0xFF64748B),
-              ),
+              style: TextStyle(fontSize: 14.0, color: Color(0xFF64748B)),
             ),
             const SizedBox(height: 18.0),
 
@@ -337,7 +330,7 @@ class ShoppingCartPage extends StatelessWidget {
                         ),
                         SizedBox(height: 2.0),
                         Text(
-                          'Matina, Davao City',
+                          'Del Carmen Village, Matina Aplaya, Davao City',
                           style: TextStyle(
                             fontSize: 13.0,
                             color: Color(0xFF64748B),
@@ -418,14 +411,14 @@ class ShoppingCartPage extends StatelessWidget {
 
             // 5. Discount Banner
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 12.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 14.0,
+                vertical: 12.0,
+              ),
               decoration: BoxDecoration(
                 color: const Color(0xFFEBF3FE),
                 borderRadius: BorderRadius.circular(14.0),
-                border: Border.all(
-                  color: const Color(0xFFBFDBFE),
-                  width: 1.0,
-                ),
+                border: Border.all(color: const Color(0xFFBFDBFE), width: 1.0),
               ),
               child: const Row(
                 children: [
@@ -501,13 +494,13 @@ class ShoppingCartPage extends StatelessWidget {
                   const SizedBox(height: 10.0),
                   _buildSummaryRow('Delivery Fee', 'PHP 50.00'),
                   const SizedBox(height: 14.0),
-                  const Divider(color: Color(0xFFE2E8F0), height: 1.0, thickness: 1.0),
-                  const SizedBox(height: 14.0),
-                  _buildSummaryRow(
-                    'Total',
-                    'PHP 1,850.00',
-                    isTotal: true,
+                  const Divider(
+                    color: Color(0xFFE2E8F0),
+                    height: 1.0,
+                    thickness: 1.0,
                   ),
+                  const SizedBox(height: 14.0),
+                  _buildSummaryRow('Total', 'PHP 1,850.00', isTotal: true),
                 ],
               ),
             ),
@@ -532,11 +525,7 @@ class ShoppingCartPage extends StatelessWidget {
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.lock,
-                      size: 18.0,
-                      color: Colors.white,
-                    ),
+                    Icon(Icons.lock, size: 18.0, color: Colors.white),
                     SizedBox(width: 8.0),
                     Text(
                       'Place Order',
@@ -571,7 +560,9 @@ class ShoppingCartPage extends StatelessWidget {
             style: TextStyle(
               fontSize: isTotal ? 17.0 : 14.0,
               fontWeight: isTotal ? FontWeight.w800 : FontWeight.w500,
-              color: isTotal ? const Color(0xFF0F172A) : const Color(0xFF475569),
+              color: isTotal
+                  ? const Color(0xFF0F172A)
+                  : const Color(0xFF475569),
             ),
           ),
         ),

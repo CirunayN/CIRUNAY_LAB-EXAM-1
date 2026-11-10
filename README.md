@@ -4,17 +4,9 @@ A Flutter shopping cart user interface built entirely using the **`StatelessWidg
 
 ## Student Information
 - **Student Name:** Niño Angelo C. Cirunay
-- **Delivery Address:** Matina, Davao City
+- **Delivery Address:** Del Carmen Village, Matina Aplaya, Davao City
 - **Project Name:** `stateless_lab_exam`
 - **GitHub Repository:** [https://github.com/CirunayN/LAB-EXAM-1.git](https://github.com/CirunayN/LAB-EXAM-1.git)
-
----
-
-## Output Screenshots
-
-| Complete Interface (`output_1.png`) | Console Callbacks (`console_output.png`) |
-| :---: | :---: |
-| <img src="output_1.png" width="360" alt="Full Shopping Cart Interface" /> | <img src="console_output.png" width="500" alt="Console Callbacks" /> |
 
 ---
 
@@ -33,7 +25,7 @@ A Flutter shopping cart user interface built entirely using the **`StatelessWidg
 3. **Delivery Information Card**
    - Rounded white card with location icon (`Icons.location_on`).
    - Deliver to: **`Niño Angelo C. Cirunay`**.
-   - Subtext: *`Matina, Davao City`*.
+   - Subtext: *`Del Carmen Village, Matina Aplaya, Davao City`*.
    - **`Change`** text button on the right (`debugPrint('Change delivery address clicked')`).
 
 4. **Order Items Section**
@@ -109,26 +101,15 @@ class CartItemCard extends StatelessWidget {
 
 ---
 
-## Project Structure & Submission Files
+## Project Structure
 
 ```text
 stateless_lab_exam/
 ├── lib/
 │   ├── main.dart
 │   └── shopping_cart_page.dart
-├── submission/
-│   ├── main.dart
-│   ├── shopping_cart_page.dart
-│   ├── output_1.png
-│   ├── output_2.png
-│   ├── console_output.png
-│   └── stateless_lab_exam_documentation.pdf
 ├── test/
 │   └── widget_test.dart
-├── output_1.png
-├── output_2.png
-├── console_output.png
-├── stateless_lab_exam_documentation.pdf
 ├── pubspec.yaml
 └── README.md
 ```
